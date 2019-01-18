@@ -27,6 +27,8 @@ public class Practice05SetFakeBoldTextView extends View {
         paint.setTextSize(60);
 
         // 使用 Paint.setFakeBoldText() 来加粗文字
+        // 之所以叫伪粗体（ fake bold ），因为它并不是通过选用更高 weight 的字体让文字变粗，而是通过程序在运行时把文字给「描粗」了
+        paint.setFakeBoldText(true);
     }
 
     @Override
